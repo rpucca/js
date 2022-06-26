@@ -1,0 +1,16 @@
+//tipo de dados
+//booleanos
+const numero = 456;
+const numeroString = '456';
+
+//Dois iguais "=="  haverá uma coerção do valor para que ambos os lados da expressão tenham o mesmo tipo.
+//Três iguais "===" não haverá coerção e por isso o código abaixo dará falso:*/
+console.log('haverá uma coerção do valor:'+(numero == numeroString));
+console.log('não haverá coerção:'+(numero === numeroString));
+
+console.log('soma de strings:'+numero + numeroString);
+
+console.log('conversão Number:'+(numero + Number(numeroString)));
+console.log('conversão String:'+(String(numero) + numeroString));
+
+

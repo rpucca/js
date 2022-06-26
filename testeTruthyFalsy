@@ -1,0 +1,24 @@
+//true / false
+const usuarioLogado = true;
+const contaPaga = false;
+console.log(0  == false);
+console.log("" == false);
+console.log(1  == true);
+
+//null / undefined
+let varUndefined;
+let varNull = null;
+console.log(varUndefined);
+console.log(varNull);
+
+let numero = 3;
+let texto = 'teste';
+let booleano = true;
+console.log(typeof numero);
+console.log(typeof texto);
+console.log(typeof booleano);
+console.log(typeof varUndefined);
+console.log(typeof varNull);
+
+
+
