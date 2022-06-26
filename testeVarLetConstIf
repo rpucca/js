@@ -1,0 +1,41 @@
+//var 
+//pode ser declarada em qualquer parte do código, o javascript lê todo o código e verifica quais variáveis foram criadas.
+//é uma regra criada na origem do javascript.
+var varAltura =5;
+var varComprimento = 7;
+varArea = varAltura * varComprimento;
+console.log("utilização de var: "+ varArea);
+var varArea; //criada na última linha,porém não dá erro!!!
+
+//----------------------------------------------------------------------------------------------------------------------
+//let
+let letAltura =5;
+let letComprimento = 7;
+let letForma = 'retangulo';
+let letArea;
+
+if (letForma = 'retangulo') {
+    letArea = letAltura * letComprimento;
+} else {
+    letArea = (letAltura * letComprimento) / 2;
+}
+
+console.log("utilização de let: "+ letArea);
+//let letArea; //com let as variáveis tem que ser declaradas antes de serem utilizadas!!! Senão Cannot access 'letArea' before initialization
+
+//----------------------------------------------------------------------------------------------------------------------
+//const
+const constAltura =5;
+const constComprimento = 7;
+const constForma = 'retangulo';
+//const constArea;//SyntaxError: Missing initializer in const declaration
+let letNovaArea;//SyntaxError: Missing initializer in const declaration
+
+if (constForma == 'retangulo') {
+    letNovaArea = constAltura * constComprimento;
+} else {
+    letNovaArea = (constAltura * constComprimento) / 2;
+}
+
+console.log("utilização de const: "+ letNovaArea);
+
