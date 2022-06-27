@@ -1,0 +1,11 @@
+const nome = 'Ricardo';
+const idade = 52;
+const cidade = 'Curitiba';
+let   apresentacao;
+
+apresentacao = "Meu nome é ${nome}, idade é ${idade} nascido em ${cidade}";
+console.log(apresentacao);
+apresentacao = `Meu nome é ${nome}, idade é ${idade} nascido em ${cidade}`;
+console.log(apresentacao);
+
+

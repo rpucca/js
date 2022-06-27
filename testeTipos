@@ -1,0 +1,19 @@
+const a = '';
+const b = 0;
+console.log(a==0);
+console.log(b==0);
+
+let c;
+c = '';
+if (c) {
+  console.log('true - com conteúdo');
+}else {
+  console.log('false - vazio');
+};
+
+c = '0';
+if (c) {
+  console.log('true - com conteúdo');
+}else {
+  console.log('false - vazio');
+};
