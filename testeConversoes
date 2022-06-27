@@ -12,5 +12,8 @@ console.log('soma de strings:'+numero + numeroString);
 
 console.log('conversão Number:'+(numero + Number(numeroString)));
 console.log('conversão String:'+(String(numero) + numeroString));
+console.log('conversão String:'+(numero.toString() + numeroString));
 
-
+let largura = "10";
+let altura = "5";
+console.log( largura  + altura);

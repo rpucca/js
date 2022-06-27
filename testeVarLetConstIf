@@ -9,6 +9,7 @@ var varArea; //criada na última linha,porém não dá erro!!!
 
 //----------------------------------------------------------------------------------------------------------------------
 //let
+//com let as variáveis tem que ser declaradas antes de serem utilizadas!!! Senão Cannot access 'letArea' before initialization
 let letAltura =5;
 let letComprimento = 7;
 let letForma = 'retangulo';
@@ -29,7 +30,7 @@ const constAltura =5;
 const constComprimento = 7;
 const constForma = 'retangulo';
 //const constArea;//SyntaxError: Missing initializer in const declaration
-let letNovaArea;//SyntaxError: Missing initializer in const declaration
+let letNovaArea;
 
 if (constForma == 'retangulo') {
     letNovaArea = constAltura * constComprimento;
@@ -38,4 +39,19 @@ if (constForma == 'retangulo') {
 }
 
 console.log("utilização de const: "+ letNovaArea);
+
+//Var/let/const dentro e fora do escopo - global / local
+var respostaDeTudo = 0
+let idade = 0
+const pi = 0
+{
+  var respostaDeTudo = 3.14
+  let idade = 42
+  const pi = 29
+  console.log('Dentro do Escopo:'+respostaDeTudo, idade, pi)
+}
+//var    foi reatribuída dentro do escopo e refletiu fora. Escopo global!!
+//let    foi reatribuída somente dentro do escopo. Escopo local!!
+//const  foi reatribuída somente dentro do escopo. Escopo local!!
+console.log('Fora do Escopo:'+respostaDeTudo, idade, pi)
 

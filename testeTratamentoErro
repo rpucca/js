@@ -1,0 +1,8 @@
+const variavel = 'teste';
+console.log(variavel);
+console.time();
+console.timeEnd();
+console.trace();
+console.warn();
+console.error('teste erro');
+console.error(new Error("deu erro"));
